@@ -1,12 +1,11 @@
 package com.joaomatheus.agenda.shared.exception;
 
-import org.springframework.web.bind;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 
-@MethodArgumentNotValidException
 @RestControllerAdvice
 public class GlobalExceptionHandler{
-    @ExceptionHandler(GlobalExceptionHandler.class)
-    public ProblemDetail tratarValidacao(MethodArgumentNotValidException){
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ProblemDetail tratarValidacao(MethodArgumentNotValidException exHandler){
         
     }
 }
