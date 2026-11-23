@@ -1,3 +1,11 @@
 # Primeiro-projeto-em-SpringBoot
 
-28bq9QDVSrCl2ssEXMy6G6VNVRqyVSnLiAwRkMNiEJSzEUWk#NiXZdi7MarSrJEQD4sCTjHwj0_CQgQBvbY5-D_msHk4
+package com.joaomatheus.agenda.shared.exception;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler{
+    @HandlerException
+    public ProblemDetail tratarValidacao(){
+        
+    }
+}
